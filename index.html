@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Added a link to Bootstrap-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Added a link to our CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">Crystals Collector</h1>
+    <p class="text-left">You will be given a random number at the start of the game.</p>
+    <p class="text-left">There are four crystals below.  By clicking on a 
+        crystal you will add a specific amount of points to your total score.</p>
+    <p class="text-left">You win the game by matching your total score to the random number, you
+        lose the game if your total score goes above the random number.</p>
+    <p class="text-left">The value of each crystal is hidden from you until you click on it.</p>
+    <p class="text-left">Each time the game starts, the value of each crystal will change.</p>    
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-12">
+        <div class="card">
+          <h1 id="numberToGuess"></h1>
+
+          <div class="card-body">
+            <button id="button-1" class="btn crystal"></button>
+            <button id="button-2" class="btn crystal"></button>
+            <button id="button-3" class="btn crystal"></button>
+            <button id="button-4" class="btn crystal"></button>
+            <br><br>
+            
+        </div>
+      </div>
+
+      <!-- Result Panel -->
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <h1 id="total"></h1>
+            <h1 id="wins"></h1>
+            <h1 id="losses"></h1>
+            <h1 id="result"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Script -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>  
+
+</body>
+</html>

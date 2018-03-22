@@ -1,0 +1,22 @@
+.crystal {
+    height: 200px;
+    width: 200px;
+    padding-left: 100px;
+}
+
+#button-1 {
+    background-image: url("../images/crystal1.jpg");
+}
+
+#button-2 {
+    background-image: url("../images/crystal2.jpg");
+}
+
+#button-3 {
+    background-image: url("../images/crystal3.jpg");
+}
+
+#button-4 {
+    background-image: url("../images/crystal4.jpg");
+}
+
